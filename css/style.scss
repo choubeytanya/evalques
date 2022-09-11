@@ -1,0 +1,111 @@
+@import "mixin";
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  .cart-button {
+    border: none;
+    background-color: $white;
+    @include icon-font(cart);
+  }
+  .top-bar-list{
+    width:70%;
+  }
+}
+
+.banner {
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+  @include image-width(banner);
+  &::before {
+    content: "";
+    background-color: $off-black;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .banner-content {
+    width:70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  @include font-para(banner);
+  .banner-button {
+    border-radius: 20px;
+  }
+}
+
+.about {
+  @include icon-font(about);
+  @include font-heading(about-content);
+  @include font-para(about-content);
+  @include image-width(site);
+}
+
+.digital-design-icon {
+  width: 100%;
+}
+
+.info {
+  @include icon-font(info);
+  @include font-heading(info);
+  @include font-para(info);
+}
+
+.features {
+  @include image-width(feature);
+}
+
+.content-container {
+  @include icon-font(container);
+  @include font-heading(container);
+  @include font-para(container);
+}
+
+.creative-people {
+  @include image-width(people);
+  .about-btn {
+    border-radius: 20px;
+  }
+}
+
+.latest-article {
+  @include font-heading(article-image);
+  @include font-para(article-image);
+  @include image-width(latest);
+}
+
+.client {
+  @include icon-font(client);
+  @include font-para(client);
+  @include image-width(client);
+}
+
+.contact {
+  @include font-heading(cont1);
+  .cont1-para {
+    font-size: 12px;
+  }
+  .date {
+    font-size: 10px;
+  }
+}
+
+.portfolio {
+  @include image-width(portfolio);
+}
+
+@import "media";

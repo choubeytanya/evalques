@@ -1,0 +1,136 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner {
+    height: 45vh;
+    .banner-content {
+      width: 70%;
+    }
+    .heading {
+      font-size: 40px;
+    }
+  }
+
+  .top-bar {
+    .top-bar-list {
+      width: auto;
+      flex-direction: row-reverse;
+    }
+  }
+
+  .content-container {
+    flex-direction: row !important;
+    justify-content: space-between;
+    .container-icon {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .nav-link {
+    font-size: 15px;
+    padding: 7px;
+  }
+  .banner {
+    height: 41vh;
+    .banner-image {
+      width: 100vw;
+      height: 100%;
+    }
+    .banner-content {
+      width: 90%;
+    }
+    .heading {
+      font-size: 20px;
+    }
+    .banner-para {
+      font-size: 10px;
+    }
+    .banner-button {
+      width: 120px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .top-bar {
+    .top-bar-list {
+      width: auto;
+      flex-direction: row-reverse;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-container {
+    flex-direction: row !important;
+    justify-content: space-between;
+    .container-icon {
+      font-size: 35px;
+    }
+    .container-heading {
+      font-size: 15px;
+    }
+    .container-para {
+      font-size: 13px;
+    }
+  }
+
+  .latest-article {
+    .article-image-heading {
+      font-size: 12px;
+    }
+    .article-image-para {
+      font-size: 12px;
+    }
+  }
+
+  .client {
+    .client-heading {
+      font-size: 20px;
+    }
+    .client-para {
+      font-size: 10px;
+    }
+  }
+
+  .contact {
+    .cont1-heading {
+      font-size: 10px;
+    }
+    .cont1-para {
+      font-size: 10px;
+    }
+  }
+  .contact-file {
+    padding: 10px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+    .nav-menu {
+      position: absolute;
+      z-index:3;
+      top:100%;
+      text-align: center;
+      background-color:$offwhite;
+      width: 90vw;
+      right: 0;
+  
+    }
+}
+
+@media (min-width:992px) and (max-width:1023px){
+    .top-bar {
+        .top-bar-list {
+          width: auto;
+          flex-direction: row;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@mixin icon-font($place) {
+    .#{$place}-icon {
+      font-size: 25px;
+    }
+  }
+  
+  @mixin font-heading($place) {
+    .#{$place}-heading {
+      font-size: 15px;
+    }
+  }
+  
+  @mixin font-para($place) {
+    .#{$place}-para {
+      font-size: 15px;
+    }
+  }
+  
+  @mixin image-width($place) {
+    .#{$place}-image {
+      width: 100%;
+    }
+  }
