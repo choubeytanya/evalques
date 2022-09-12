@@ -82,6 +82,13 @@
   width: 150px;
   font-size: 12px; }
 
+.design-link {
+  border-right: 2px solid grey;
+  transform: skewX(-30deg); }
+
+.design-nav:last-child .design-link {
+  border-right: none; }
+
 .people-image {
   box-shadow: 2px 2px 5px 5px #e2e1e1; }
 
