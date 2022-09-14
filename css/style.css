@@ -24,7 +24,7 @@
   width: 70%; }
 
 .banner {
-  height: 80vh;
+  height: 60vh;
   overflow: hidden; }
   .banner .banner-image {
     width: 100%; }
@@ -138,8 +138,7 @@
   .banner {
     height: auto; }
     .banner .banner-image {
-      width: 100vw;
-      height: 100%; }
+      width: 100%; }
     .banner .banner-content {
       width: 80%; }
     .banner .heading {
@@ -180,9 +179,6 @@
     width: 90vw;
     right: 0; } }
 @media (min-width: 992px) and (max-width: 1023px) {
-  .banner {
-    height: 80vh; }
-
   .top-bar .top-bar-list {
     width: auto;
     flex-direction: row; } }

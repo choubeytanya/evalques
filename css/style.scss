@@ -32,7 +32,7 @@
 }
 
 .banner {
-  height:80vh;
+  height:60vh;
   overflow: hidden;
   @include image-width(banner);
   &::before {
