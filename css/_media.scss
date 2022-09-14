@@ -1,11 +1,11 @@
 @media (min-width: 768px) and (max-width: 1023.98px) {
   .banner {
-    height:auto;
+    height: auto;
     .banner-content {
       width: 70%;
     }
     .heading {
-      font-size: 40px;
+      @include font(40);
     }
   }
 
@@ -20,18 +20,25 @@
     flex-direction: row !important;
     justify-content: space-between;
     .container-icon {
-      font-size: 40px;
+      @include font(40);
     }
   }
 }
 
 @media (min-width: 320px) and (max-width: 767.98px) {
+  * {
+    @include font(11);
+  }
+
+  .main-heading {
+    @include font(15);
+  }
   .nav-link {
     font-size: 14px;
     padding: 7px;
   }
   .banner {
-    height:auto;
+    height: auto;
     .banner-image {
       width: 100vw;
       height: 100%;
@@ -40,16 +47,13 @@
       width: 80%;
     }
     .heading {
-      font-size: 20px;
-    }
-    .banner-para {
-      font-size: 10px;
+      @include font(20);
     }
     .banner-button {
       width: 110px;
       margin-bottom: 5px;
       padding: 8px !important;
-      font-size: 9px;
+      @include font(9);
     }
   }
 
@@ -70,48 +74,16 @@
     flex-direction: row !important;
     justify-content: space-between;
     .container-icon {
-      font-size: 35px;
-    }
-    .container-heading {
-      font-size: 15px;
-    }
-    .container-para {
-      font-size: 13px;
+      @include font(35);
     }
   }
 
-  .latest-article {
-    .article-image-heading {
-      font-size: 12px;
-    }
-    .article-image-para {
-      font-size: 12px;
-    }
-  }
-
-  .client {
-    .client-heading {
-      font-size: 20px;
-    }
-    .client-para {
-      font-size: 10px;
-    }
-  }
-
-  .contact {
-    .cont1-heading {
-      font-size: 10px;
-    }
-    .cont1-para {
-      font-size: 10px;
-    }
-  }
   .contact-file {
     padding: 10px;
   }
 
   .copyright {
-    font-size: 10px;
+    @include font(10);
   }
 }
 
@@ -128,8 +100,8 @@
 }
 
 @media (min-width: 992px) and (max-width: 1023px) {
-  .banner{
-    height:80vh;
+  .banner {
+    height: 80vh;
   }
   .top-bar {
     .top-bar-list {

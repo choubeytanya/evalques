@@ -7,12 +7,17 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  @include font(15);
 }
 .fix-width{
   max-width:1500px;
 }
 .nav-link{
-  font-size: 15px;
+  @include font(15);
+}
+
+.main-heading{
+  @include font(15);
 }
 
 .top-bar {
@@ -46,14 +51,13 @@
     z-index: 2;
   }
   .heading {
-    font-size: 50px;
+    @include font(50);
     max-width:700px;
   }
-  @include font-para(main);
   .banner-button {
     border-radius: 30px;
     width: 150px;
-    font-size: 12px;
+    @include font(12);
   }
 }
 
@@ -63,8 +67,6 @@
 
 .about {
   @include icon-font(about);
-  @include font-heading(about-content);
-  @include font-para(about-content);
   @include image-width(site);
   
 }
@@ -75,8 +77,6 @@
 
 .info {
   @include icon-font(info);
-  @include font-heading(info);
-  @include font-para(info);
 }
 
 .features {
@@ -85,8 +85,6 @@
 
 .content-container {
   @include icon-font(container);
-  @include font-heading(container);
-  @include font-para(container);
 }
 
 .creative-people {
@@ -94,14 +92,14 @@
   .about-btn {
     border-radius: 30px;
     width: 150px;
-    font-size: 12px;
+    @include font(12);
   }
 }
 
 .design-link{
   font-style: italic;
   padding:0 !important;
-  font-size:20px;
+  @include font(20);
   &::after{
     content:"/";
     padding:0 15px;
@@ -119,24 +117,20 @@
 }
 
 .latest-article {
-  @include font-heading(article-image);
-  @include font-para(article-image);
   @include image-width(latest);
 }
 
 .client {
   @include icon-font(client);
-  @include font-para(client);
   @include image-width(client);
 }
 
 .contact {
-  @include font-heading(cont1);
   .cont1-para {
-    font-size: 12px;
+    @include font(12);
   }
   .date {
-    font-size: 10px;
+    @include font(10);
   }
 }
 

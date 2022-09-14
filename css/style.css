@@ -3,12 +3,16 @@
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px; }
 
 .fix-width {
   max-width: 1500px; }
 
 .nav-link {
+  font-size: 15px; }
+
+.main-heading {
   font-size: 15px; }
 
 .top-bar .cart-button {
@@ -40,8 +44,6 @@
   .banner .heading {
     font-size: 50px;
     max-width: 700px; }
-  .banner .main-para {
-    font-size: 15px; }
   .banner .banner-button {
     border-radius: 30px;
     width: 150px;
@@ -52,10 +54,6 @@
 
 .about .about-icon {
   font-size: 25px; }
-.about .about-content-heading {
-  font-size: 15px; }
-.about .about-content-para {
-  font-size: 15px; }
 .about .site-image {
   width: 100%; }
 
@@ -64,20 +62,12 @@
 
 .info .info-icon {
   font-size: 25px; }
-.info .info-heading {
-  font-size: 15px; }
-.info .info-para {
-  font-size: 15px; }
 
 .features .feature-image {
   width: 100%; }
 
 .content-container .container-icon {
   font-size: 25px; }
-.content-container .container-heading {
-  font-size: 15px; }
-.content-container .container-para {
-  font-size: 15px; }
 
 .creative-people .people-image {
   width: 100%; }
@@ -101,22 +91,14 @@
 .people-image {
   box-shadow: 2px 2px 5px 5px #e2e1e1; }
 
-.latest-article .article-image-heading {
-  font-size: 15px; }
-.latest-article .article-image-para {
-  font-size: 15px; }
 .latest-article .latest-image {
   width: 100%; }
 
 .client .client-icon {
   font-size: 25px; }
-.client .client-para {
-  font-size: 15px; }
 .client .client-image {
   width: 100%; }
 
-.contact .cont1-heading {
-  font-size: 15px; }
 .contact .cont1-para {
   font-size: 12px; }
 .contact .date {
@@ -143,6 +125,12 @@
     .content-container .container-icon {
       font-size: 40px; } }
 @media (min-width: 320px) and (max-width: 767.98px) {
+  * {
+    font-size: 11px; }
+
+  .main-heading {
+    font-size: 15px; }
+
   .nav-link {
     font-size: 14px;
     padding: 7px; }
@@ -156,8 +144,6 @@
       width: 80%; }
     .banner .heading {
       font-size: 20px; }
-    .banner .banner-para {
-      font-size: 10px; }
     .banner .banner-button {
       width: 110px;
       margin-bottom: 5px;
@@ -178,25 +164,6 @@
     justify-content: space-between; }
     .content-container .container-icon {
       font-size: 35px; }
-    .content-container .container-heading {
-      font-size: 15px; }
-    .content-container .container-para {
-      font-size: 13px; }
-
-  .latest-article .article-image-heading {
-    font-size: 12px; }
-  .latest-article .article-image-para {
-    font-size: 12px; }
-
-  .client .client-heading {
-    font-size: 20px; }
-  .client .client-para {
-    font-size: 10px; }
-
-  .contact .cont1-heading {
-    font-size: 10px; }
-  .contact .cont1-para {
-    font-size: 10px; }
 
   .contact-file {
     padding: 10px; }
